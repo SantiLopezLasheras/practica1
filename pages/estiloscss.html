@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso Desarrollo Web | Atributos HTML</title>
+    <link rel="stylesheet" href="./../css/estiloscss.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="./../img/banner.jpg" alt="banner" class="header-bg" />
+      </div>
+      <span>CURSO DESARROLLO WEB</span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="./contenidoHTML.html">Modificar contenido HTML</a></li>
+        <li><a href="./atributosHTML.html">Modificar atributos HTML</a></li>
+        <li><a href="./estiloscss.html">Modificar estilos CSS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Modificar estilos CSS</h1>
+        <p>
+          Además de modificar el contenido HTML y sus atributos, JavaScript
+          también nos permite modificar de forma dinámica los estilos CSS de
+          nuestra página.
+        </p>
+
+        <p>
+          Por ejemplo, imagina que queremos que cuando el usuario haga click en
+          un botón, cambie el color del texto:
+        </p>
+
+        <div id="demoContainer">
+          <p id="changeMe">¡Cámbiame!</p>
+          <button
+            type="button"
+            onclick='document.getElementById("changeMe").style.color="#eee"'
+          >
+            Haz click para cambiar color del texto de al lado
+          </button>
+        </div>
+
+        <p>
+          Para ello, podemos añadir un evento al butón para que, si se hace
+          click, el texto de al lado cambie el valor de su propiedad color a
+          blanco. Esto se puede hacer gracias al evento onclick de JavaScript:
+        </p>
+        <pre>
+          <code>
+            < button 
+              type="button"
+              onclick='document.getElementById("changeMe").style.color="#eee"'
+            >
+              Haz click para cambiar color del texto de al lado
+            < /button >
+          </code>
+        </pre>
+      </div>
+    </main>
+    <footer>
+      <span>Curso Desarrollo Web</span>
+    </footer>
+  </body>
+</html>

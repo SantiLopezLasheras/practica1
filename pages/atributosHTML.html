@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso Desarrollo Web | Atributos HTML</title>
+    <link rel="stylesheet" href="./../css/atributoshtml.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="./../img/banner.jpg" alt="banner" class="header-bg" />
+      </div>
+      <span>CURSO DESARROLLO WEB</span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="./contenidoHTML.html">Modificar contenido HTML</a></li>
+        <li><a href="./atributosHTML.html">Modificar atributos HTML</a></li>
+        <li><a href="./estiloscss.html">Modificar estilos CSS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Modificar atributos HTML</h1>
+        <p>
+          JavaScript también nos permite modificar de forma dinámica los
+          atributos HTML de nuestras páginas.
+        </p>
+
+        <p>
+          Por ejemplo, imagina que queremos que cuando el usuario haga click en
+          un botón, se muestre una imágen que previamente esta oculta:
+        </p>
+
+        <div id="demoContainer">
+          <img
+            id="imagenOculta"
+            src="./../img/gitflow.webp"
+            alt="git flow chart"
+            class="hidden"
+          />
+          <button
+            type="button"
+            onclick='document.getElementById("imagenOculta").classList.remove("hidden")'
+          >
+            Haz click para mostrar la imagen oculta
+          </button>
+        </div>
+
+        <p>
+          Para ello, podemos añadir un evento al butón con una función para que,
+          si se hace click, entonces muestre la imagen oculta modificando el
+          atributo class del elemento img. Esto se puede hacer gracias al evento
+          onclick de JavaScript:
+        </p>
+        <pre>
+          <code>
+            < button 
+              type="button"
+              onclick='document.getElementById("imagenOculta").classList.remove("hidden")'
+            >
+              Haz click para mostrar la imagen oculta
+            < /button >
+          </code>
+        </pre>
+      </div>
+    </main>
+    <footer>
+      <span>Curso Desarrollo Web</span>
+    </footer>
+  </body>
+</html>

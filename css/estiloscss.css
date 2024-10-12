@@ -93,12 +93,21 @@ main {
   width: 50%;
   margin: 0 auto;
 }
-main ul {
-  margin-top: 1.5rem;
+
+#demoContainer {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-main li {
-  padding-bottom: 1rem;
+button {
+  width: 25%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* FOOTER */
