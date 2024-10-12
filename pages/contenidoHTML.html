@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso Desarrollo Web | Contenido HTML</title>
+    <link rel="stylesheet" href="./../css/contenidohtml.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="./../img/banner.jpg" alt="banner" class="header-bg" />
+      </div>
+      <span>CURSO DESARROLLO WEB</span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="./contenidoHTML.html">Modificar contenido HTML</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Modificar el contenido HTML</h1>
+        <p>
+          JavaScript nos permite modificar de forma dinámica el contenido HTML
+          de nuestras páginas.
+        </p>
+
+        <p>
+          Por ejemplo, con JavaScript podemos seleccionar un elemento de nuestra
+          página web que queremos que cambie de aspecto cuando el usuario haga
+          click en un botón:
+        </p>
+
+        <div id="demoContainer">
+          <p id="changeMe">¡Cámbiame!</p>
+          <button
+            type="button"
+            onclick='document.getElementById("changeMe").innerHTML = "¡Me has cambiado!"'
+          >
+            Haz click para cambiar el texto de al lado
+          </button>
+        </div>
+
+        <p>
+          Para ello, podemos añadir un evento al butón que esté vigilante para
+          ver si el usuario hace click. Podemos crear una función para que, si
+          se hace click, entonces cambiará el texto por otro distinto. Esto se
+          puede hacer gracias al evento onclick de JavaScript:
+        </p>
+        <pre>
+          <code>
+            < button 
+              type="button"
+              onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'
+            >
+              Haz click para cambiar el texto de al lado
+            < /button >
+          </code>
+        </pre>
+      </div>
+    </main>
+    <footer>
+      <span>Curso Desarrollo Web</span>
+    </footer>
+  </body>
+</html>
