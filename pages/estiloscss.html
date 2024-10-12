@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Curso Desarrollo Web | Atributos HTML</title>
-    <link rel="stylesheet" href="./../css/atributoshtml.css" />
+    <link rel="stylesheet" href="./../css/estiloscss.css" />
   </head>
 
   <body>
@@ -24,45 +24,40 @@
     </nav>
     <main>
       <div class="container">
-        <h1>Modificar atributos HTML</h1>
+        <h1>Modificar estilos CSS</h1>
         <p>
-          JavaScript también nos permite modificar de forma dinámica los
-          atributos HTML de nuestras páginas.
+          Además de modificar el contenido HTML y sus atributos, JavaScript
+          también nos permite modificar de forma dinámica los estilos CSS de
+          nuestra página.
         </p>
 
         <p>
           Por ejemplo, imagina que queremos que cuando el usuario haga click en
-          un botón, se muestre una imágen que previamente esta oculta:
+          un botón, cambie el color del texto:
         </p>
 
         <div id="demoContainer">
-          <img
-            id="imagenOculta"
-            src="./../img/gitflow.webp"
-            alt="git flow chart"
-            class="hidden"
-          />
+          <p id="changeMe">¡Cámbiame!</p>
           <button
             type="button"
-            onclick='document.getElementById("imagenOculta").classList.remove("hidden")'
+            onclick='document.getElementById("changeMe").style.color="#eee"'
           >
-            Haz click para mostrar la imagen oculta
+            Haz click para cambiar color del texto de al lado
           </button>
         </div>
 
         <p>
-          Para ello, podemos añadir un evento al butón con una función para que,
-          si se hace click, entonces muestre la imagen oculta modificando el
-          atributo class del elemento img. Esto se puede hacer gracias al evento
-          onclick de JavaScript:
+          Para ello, podemos añadir un evento al butón para que, si se hace
+          click, el texto de al lado cambie el valor de su propiedad color a
+          blanco. Esto se puede hacer gracias al evento onclick de JavaScript:
         </p>
         <pre>
           <code>
             < button 
               type="button"
-              onclick='document.getElementById("imagenOculta").classList.remove("hidden")'
+              onclick='document.getElementById("changeMe").style.color="#eee"'
             >
-              Haz click para mostrar la imagen oculta
+              Haz click para cambiar color del texto de al lado
             < /button >
           </code>
         </pre>
