@@ -8,7 +8,7 @@ Git es un sistema de control de versiones distribuido que nos facilita el trabaj
         
 Es distribuido porque cada vez que un desarrollador se descarga el proyecto, se crea una copia completa del repositorio, de manera que cada desarrollador tiene localmente todos los archivos del proyecto.
         
-Además, Git nos permite crear diversas ramas de nuestro proyecto. Por ejemplo, podemos tener una rama principal que sería nuestro proyecto ya en producción y live para los usuarios que lo visite, y aparte otras ramas o bifurcaciones en las que el equipo de desarrollo está introduciendo cambios, probando nuevas funcionalidades, etc.
+Además, Git nos permite crear diversas ramas de nuestro proyecto. Por ejemplo, podemos tener una rama principal que sería nuestro proyecto ya en producción y live para los usuarios que lo visiten, y aparte otras ramas o bifurcaciones en las que el equipo de desarrollo está introduciendo cambios, probando nuevas funcionalidades, etc.
 
 ### ¿En qué consiste la metodología Git Flow?
 
@@ -26,7 +26,7 @@ Aparte de las dos ramas principales, tenemos otros 3 tipos de ramas:
 
 ### ¿Por qué utilizar Git Flow?
 
-Se recomienda utilizar Git Flow en equipos de trabajo que tengan al menos más de 2 personas y donde en el proyecto se realicen cambios bastante frecuentes. La implementación de Git Flow es este tipo de proyectos tiene ciertas ventajas:
+Se recomienda utilizar Git Flow en equipos de trabajo que tengan al menos más de 2 personas y donde en el proyecto se realicen cambios bastante frecuentes. La implementación de Git Flow en este tipo de proyectos tiene ciertas ventajas:
 
 - aumenta la velocidad a la hora de entregar al equipo de pruebas código ya terminado
 - disminuyen los errores humanos al mezclar ramas
@@ -40,7 +40,7 @@ En esta práctica vamos a simular que un cliente nos ha pedido crear una página
 1. El usuario Santiago Lopez se ha encargado de crear primero el repositorio para el curso en GitHub.
 <img src="/assets/images/practica1.png" alt="creando un repositorio en GitHub" width="500">
 
-2. A continuacion, ha utilizado el comando git clone para clonar el repositorio localmente y ha iniciado el flujo de trabajo Git Flow con el comando git flow init, estableciendo las ramas principales main y development, y el resto de bifurcaciones para features, hotfixes y releases.
+2. A continuación, ha utilizado el comando git clone para clonar el repositorio localmente y ha iniciado el flujo de trabajo Git Flow con el comando git flow init, estableciendo las ramas principales main y development, y el resto de bifurcaciones para features, hotfixes y releases.
    
 <img src="/assets/images/practica2.png" alt="creando un repositorio en GitHub" width="500">
 
@@ -52,7 +52,7 @@ En esta práctica vamos a simular que un cliente nos ha pedido crear una página
 
 <img src="/assets/images/practica4.png" alt="creando un repositorio en GitHub" width="500">
 
-5. A contunuación hemos actualizado el repositorio en GitHub.
+5. A continuación, hemos actualizado el repositorio en GitHub.
 
 <img src="/assets/images/practica5.png" alt="creando un repositorio en GitHub" width="500">
 
@@ -60,7 +60,7 @@ En esta práctica vamos a simular que un cliente nos ha pedido crear una página
 
 <img src="/assets/images/practica6.png" alt="creando un repositorio en GitHub" width="500">
 
-7. Nuestra compañera Jane Doe se ha descargado el repositorio con un git pull y ha empezado a trabajar también en el proyecto. En este caso, se ha encardago de añadir nuevas funcionalidades a la página web del curso. Primero ha iniciado una rama feature para añadir una nueva sección al curso que consistirá en un explicación de cómo modificar contenido HTML mediante el uso de JavaScript. La rama se ha creado con el comando "git flow feature start".
+7. Nuestra compañera Jane Doe se ha descargado el repositorio con un git pull y ha empezado a trabajar también en el proyecto. En este caso, se ha encargado de añadir nuevas funcionalidades a la página web del curso. Primero ha iniciado una rama feature para añadir una nueva sección al curso que consistirá en un explicación de cómo modificar contenido HTML mediante el uso de JavaScript. La rama se ha creado con el comando "git flow feature start".
 
 <img src="/assets/images/practica13.png" alt="creando un repositorio en GitHub" width="500">
 
@@ -88,7 +88,7 @@ En esta práctica vamos a simular que un cliente nos ha pedido crear una página
     
 <img src="/assets/images/practica21.png" alt="creando un repositorio en GitHub" width="500">
 
-14. Como el proyecto ya tiene las funcionalidades requeridadas implementadas (secciones HOME, Modificar contenido HTML, Modificar atributos HTML y Modificar estilos CSS), el usuario John Smith se ha ocupado de preparar una versión release del proyecto para enviarla a producción. Para ello, ha usado el comando "git flow release start v1.0".
+14. Como el proyecto ya tiene las funcionalidades requeridas implementadas (secciones HOME, Modificar contenido HTML, Modificar atributos HTML y Modificar estilos CSS), el usuario John Smith se ha ocupado de preparar una versión release del proyecto para enviarla a producción. Para ello, ha usado el comando "git flow release start v1.0".
 
 <img src="/assets/images/practica22.png" alt="creando un repositorio en GitHub" width="500">
 
@@ -104,7 +104,7 @@ En esta práctica vamos a simular que un cliente nos ha pedido crear una página
     
 <img src="/assets/images/practica25.png" alt="creando un repositorio en GitHub" width="500">
 
-18. Finalmente, una vez añadido los estilos que faltaban en la sección, ha concluido la subrama con el comando "git flow hotfix finish", de manera que esta se ha fusionado con la rama main y development, para que estos cambios estén actualizados en ambas ramas principales. Este hotfix se ha etiquetado como milloresV_1_0 para poder referenciarlo en un futuro. Después ha subido los cambios al repositorio de GitHub con git push.
+18. Finalmente, una vez añadidos los estilos que faltaban en la sección, ha concluido la subrama con el comando "git flow hotfix finish", de manera que esta se ha fusionado con la rama main y development, para que estos cambios estén actualizados en ambas ramas principales. Este hotfix se ha etiquetado como milloresV_1_0 para poder referenciarlo en un futuro. Después ha subido los cambios al repositorio de GitHub con git push.
     
 <img src="/assets/images/practica26.png" alt="creando un repositorio en GitHub" width="500">
 
